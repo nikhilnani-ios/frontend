@@ -21,7 +21,7 @@ function Home() {
                         </p>
                 </div>
                 <div className="hc_right">
-                    <img src={blood_image} alt="blood image" />
+                    <img src={blood_image} alt="blood_image" />
                 </div>
             </div>
         </div>

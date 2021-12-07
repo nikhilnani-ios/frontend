@@ -3,7 +3,7 @@ import './App.css';
 import Home from './components/Home';
 import Bloodbank from "./components/Bloodbank";
 import Devteam from "./components/Devteam";
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import bloodbank from "./Images/bloodbank.png";
 import Adminlogin from "./components/Adminlogin";
 import Adminregister from "./components/Adminregister";

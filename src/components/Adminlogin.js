@@ -5,7 +5,6 @@ var loggedin = false;
 var hospitalId="";
 var hospitalName="";
 function Adminlogin(props) {
-    const [err,seterr] = useState(false);
     const [hospitalcredential,sethospitalCredentials] = useState({
         hospitalId:"",
         hospital_password:""
@@ -13,7 +12,7 @@ function Adminlogin(props) {
     function handlechange(e){
         const name = e.target.name;
         const value = e.target.value;
-        if(name=="hospitalId")
+        if(name==="hospitalId")
         {
             sethospitalCredentials((prev)=>{
                 return{
@@ -22,7 +21,7 @@ function Adminlogin(props) {
                 }
             })
         }
-        else if(name=="password")
+        else if(name==="password")
         {
             sethospitalCredentials((prev)=>{
                 return {
@@ -58,7 +57,7 @@ function Adminlogin(props) {
                 <div className="adminlogin_details">
                     <form onSubmit={handlesubmit}>
                         <input onChange={handlechange} className="input_field" name="hospitalId" type="text" placeholder="HospitalID" required="true" minLength="10" maxLength="10"/>
-                        <input onChange={handlechange} className="input_field"minLength="8" type="Password" name="password" className="input_field" placeholder="password" required="true"/>
+                        <input onChange={handlechange} className="input_field"minLength="8" type="Password" name="password" placeholder="password" required="true"/>
                         <input className="btn" type="submit" value="Submit"/>
                     </form>
                 </div>

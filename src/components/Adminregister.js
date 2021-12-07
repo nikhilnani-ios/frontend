@@ -88,8 +88,8 @@ function Adminregister(props) {
             <div className="adminlogin_details">
                 <form onSubmit={handlesubmit}>
                     <input onChange={handlechange} name="hname" className="input_field" type="text" placeholder="Hospitalname" required="true"/>
-                    <input onChange={handlechange} name="hid" className="input_field" type="text" placeholder=""minLength="10" maxLength="10" type="text" placeholder="HospitalID" required="true"/>
-                    <input onChange={handlechange} name="hpassword" className="input_field" type=""minLength="8" type="password" className="input_field" placeholder="password" required="true"/>
+                    <input onChange={handlechange} name="hid" className="input_field" type="text" minLength="10" maxLength="10" placeholder="HospitalID" required="true"/>
+                    <input onChange={handlechange} name="hpassword" minLength="8" type="password" className="input_field" placeholder="password" required="true"/>
                     <select className="adminreg_location" onChange={handlechange}>
                     <option value="">Location</option>
                     <option value="Andhra Pradesh">Andhra Pradesh</option>

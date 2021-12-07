@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import "./Bloodbank.css";
 import axios from "../axios.js";
 var blood_type = "";
